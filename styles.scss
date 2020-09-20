@@ -1,0 +1,155 @@
+#modalCaraNova {
+  .modal-dialog {
+    max-width: 1148px;
+  }
+  .modal-content {
+    position: relative;
+    width: 100%;
+    padding: 24px;
+
+    background-image: url("./imgs/bg_modal.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .cartoes {
+      width: 100%;
+    }
+
+    .tags {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 300;
+      color: #ef0732;
+      line-height: 60px;
+      margin-bottom: 9px;
+    }
+
+    p {
+      font-size: 22px;
+      color: #0439d6;
+      line-height: 30px;
+
+      &.subtitle {
+        font-weight: 300;
+      }
+      &.novos-nomes {
+        font-weight: bold;
+        color: #ef0732;
+        margin-bottom: 30px;
+      }
+    }
+
+    .close {
+      height: 46px;
+      width: 46px;
+      border-radius: 50%;
+      background-color: rgba(239, 7, 50, 0.4);
+      margin-left: auto;
+
+      span {
+        color: #ef0732;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #modalCaraNova {
+    .modal-dialog {
+      max-width: 800px;
+    }
+    .modal-content {
+      .box-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .tags {
+        font-size: 14px;
+      }
+
+      .cartoes {
+        width: 100%;
+      }
+
+      .title {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+
+        &.novos-nomes {
+          margin-bottom: 16px;
+        }
+      }
+      .close {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #modalCaraNova {
+    .modal-dialog {
+      max-width: 360px;
+    }
+    .modal-content {
+      background-image: url("./imgs/bg_sm_modal.svg");
+      background-color: #fff;
+      .cartoes {
+        opacity: 0;
+      }
+      .title {
+        margin-top: 100px;
+      }
+      .tags {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  #modalCaraNova {
+    .modal-content {
+      .title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 36px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 22px;
+
+        &.novos-nomes {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #modalCaraNova {
+    .modal-content {
+      .title {
+        margin-top: 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+#modalCaraNova .modal-dialog {
+  max-width: 1148px;
+}
+#modalCaraNova .modal-content {
+  position: relative;
+  width: 100%;
+  padding: 24px;
+  background-image: url("./imgs/bg_modal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#modalCaraNova .modal-content .cartoes {
+  width: 100%;
+}
+#modalCaraNova .modal-content .tags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+#modalCaraNova .modal-content .title {
+  font-size: 48px;
+  font-weight: 300;
+  color: #ef0732;
+  line-height: 60px;
+  margin-bottom: 9px;
+}
+#modalCaraNova .modal-content p {
+  font-size: 22px;
+  color: #0439d6;
+  line-height: 30px;
+}
+#modalCaraNova .modal-content p.subtitle {
+  font-weight: 300;
+}
+#modalCaraNova .modal-content p.novos-nomes {
+  font-weight: bold;
+  color: #ef0732;
+  margin-bottom: 30px;
+}
+#modalCaraNova .modal-content .close {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: rgba(239, 7, 50, 0.4);
+  margin-left: auto;
+}
+#modalCaraNova .modal-content .close span {
+  color: #ef0732;
+}
+
+@media (max-width: 1200px) {
+  #modalCaraNova .modal-dialog {
+    max-width: 800px;
+  }
+  #modalCaraNova .modal-content .box-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #modalCaraNova .modal-content .tags {
+    font-size: 14px;
+  }
+  #modalCaraNova .modal-content .cartoes {
+    width: 100%;
+  }
+  #modalCaraNova .modal-content .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #modalCaraNova .modal-content p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #modalCaraNova .modal-content p.novos-nomes {
+    margin-bottom: 16px;
+  }
+  #modalCaraNova .modal-content .close {
+    height: 32px;
+    width: 32px;
+  }
+}
+@media (max-width: 991px) {
+  #modalCaraNova .modal-dialog {
+    max-width: 360px;
+  }
+  #modalCaraNova .modal-content {
+    background-image: url("./imgs/bg_sm_modal.svg");
+    background-color: #fff;
+  }
+  #modalCaraNova .modal-content .cartoes {
+    opacity: 0;
+  }
+  #modalCaraNova .modal-content .title {
+    margin-top: 100px;
+  }
+  #modalCaraNova .modal-content .tags {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  #modalCaraNova .modal-content .title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 36px;
+  }
+  #modalCaraNova .modal-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #modalCaraNova .modal-content p.novos-nomes {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 425px) {
+  #modalCaraNova .modal-content .title {
+    margin-top: 80px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
